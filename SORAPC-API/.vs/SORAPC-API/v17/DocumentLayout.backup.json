@@ -1,0 +1,459 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\productstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\orderposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\orderposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\controllers\\productstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\controllers\\productstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\controllers\\productcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\controllers\\productcategoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\controllers\\orderstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\controllers\\orderstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\controllers\\orderpositionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\controllers\\orderpositionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|c:\\users\\yaney\\source\\repos\\sorapc-api\\sorapc-api\\models\\sorapccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E39066D-E937-4E54-B876-A7A421D4A36D}|SORAPC-API\\SORAPC-API.csproj|solutionrelative:sorapc-api\\models\\sorapccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "SORAPC-API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:27:44.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "SORAPC-API\\Controllers\\RolesController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:30:15.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "SORAPC-API\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:30:54.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartsController.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\CartsController.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Controllers\\CartsController.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\CartsController.cs",
+              "RelativeToolTip": "SORAPC-API\\Controllers\\CartsController.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAmwMYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:25:22.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Controllers\\ReviewsController.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "SORAPC-API\\Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:29:32.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SORAPC-API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwD4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:25:11.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\Login.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Login.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:22:55.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Product.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\Product.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBcAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T07:28:05.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Cart.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:45:40.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderPosition.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\OrderPosition.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\OrderPosition.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\OrderPosition.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\OrderPosition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:21:57.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "SORAPC-API\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwEoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:26:16.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\JwtSettings.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:20:09.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductStatusController.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\ProductStatusController.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Controllers\\ProductStatusController.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\ProductStatusController.cs",
+              "RelativeToolTip": "SORAPC-API\\Controllers\\ProductStatusController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:28:50.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductCategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\ProductCategoriesController.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Controllers\\ProductCategoriesController.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\ProductCategoriesController.cs",
+              "RelativeToolTip": "SORAPC-API\\Controllers\\ProductCategoriesController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:28:12.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderStatusController.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\OrderStatusController.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Controllers\\OrderStatusController.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\OrderStatusController.cs",
+              "RelativeToolTip": "SORAPC-API\\Controllers\\OrderStatusController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:27:17.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrderPositionsController.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\OrderPositionsController.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Controllers\\OrderPositionsController.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Controllers\\OrderPositionsController.cs",
+              "RelativeToolTip": "SORAPC-API\\Controllers\\OrderPositionsController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:26:42.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\OrderStatus.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:22:01.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\User.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\User.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA4wBUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T07:28:32.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductCategory.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\ProductCategory.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\ProductCategory.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\ProductCategory.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\ProductCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:22:14.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductStatus.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\ProductStatus.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\ProductStatus.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\ProductStatus.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\ProductStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:22:18.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Register.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Register.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\Register.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Register.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\Register.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:23:15.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\Review.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Review.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:22:24.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Role.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:22:29.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Program.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Program.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Program.cs",
+              "RelativeToolTip": "SORAPC-API\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:02:06.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\Order.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T09:21:51.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SorapcContext.cs",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\SorapcContext.cs",
+              "RelativeDocumentMoniker": "SORAPC-API\\Models\\SorapcContext.cs",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\Models\\SorapcContext.cs",
+              "RelativeToolTip": "SORAPC-API\\Models\\SorapcContext.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAADwv9MAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T06:05:03.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\appsettings.json",
+              "RelativeDocumentMoniker": "SORAPC-API\\appsettings.json",
+              "ToolTip": "C:\\Users\\yaney\\source\\repos\\SORAPC-API\\SORAPC-API\\appsettings.json",
+              "RelativeToolTip": "SORAPC-API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-02T06:01:07.895Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+﻿@model IEnumerable<SORAPC_API.Models.Role>
+@{
+    ViewBag.Title = "Список ролей";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">Список ролей</h2>
+    <div class="mb-3">
+        <a asp-action="Admin" asp-controller="Admin" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left me-2"></i> Назад к панели
+        </a>
+    </div>
+    <div class="mb-3">
+        <a asp-action="CreateRoles" asp-controller="Admin" class="btn btn-success">
+            <i class="fas fa-plus"></i> Добавить роль
+        </a>
+    </div>
+    <div class="card shadow">
+        <div class="card-body">
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Название роли</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.IdRole</td>
+                            <td>
+                                @{
+                                    string roleName = item.IdRole == 1 ? "Администратор" :
+                                    item.IdRole == 2 ? "Клиент" :
+                                    item.Title ?? "Неизвестная роль";
+                                    <span class="badge @(item.IdRole == 1 ? "bg-primary" : "bg-secondary")">@roleName</span>
+                                }
+                            </td>
+                            <td>
+                                <a asp-action="EditRoles" asp-route-id="@item.IdRole" class="btn btn-sm btn-warning">
+                                    <i class="fas fa-edit"></i> Изменить
+                                </a>
+                                <a asp-action="DetailsRoles" asp-route-id="@item.IdRole" class="btn btn-sm btn-info">
+                                    <i class="fas fa-info-circle"></i> Детали
+                                </a>
+                                <a asp-action="DeleteRoles" asp-route-id="@item.IdRole" class="btn btn-sm btn-danger">
+                                    <i class="fas fa-trash"></i> Удалить
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+}

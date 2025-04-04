@@ -1,0 +1,27 @@
+﻿@model SORAPC_API.Models.Role
+@{
+    ViewData["Title"] = "Детали роли";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">Детали роли</h2>
+    <div class="card shadow p-4">
+        <dl class="row">
+            <dt class="col-sm-3">ID</dt>
+            <dd class="col-sm-9">@Model.IdRole</dd>
+            <dt class="col-sm-3">Название</dt>
+            <dd class="col-sm-9">
+                @{
+                    string roleName = Model.IdRole == 1 ? "Администратор" :
+                    Model.IdRole == 2 ? "Клиент" :
+                    Model.Title ?? "Неизвестная роль";
+                    <span class="badge @(Model.IdRole == 1 ? "bg-primary" : "bg-secondary")">@roleName</span>
+                }
+            </dd>
+        </dl>
+        <div class="text-center mt-4">
+            <a asp-action="EditRoles" asp-route-id="@Model.IdRole" class="btn btn-primary">Изменить</a>
+            <a asp-action="Roles" class="btn btn-secondary">Назад</a>
+        </div>
+    </div>
+</div>

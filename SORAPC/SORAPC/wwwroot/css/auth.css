@@ -1,0 +1,31 @@
+﻿.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 0 15px; 
+}
+
+.card {
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto;
+}
+
+.card-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.btn {
+    border-radius: 50px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+a.text-primary {
+    text-decoration: none;
+}

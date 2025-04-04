@@ -1,0 +1,73 @@
+﻿@model SORAPC_API.Models.User
+@{
+    ViewData["Title"] = "Добавить пользователя";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">Добавить пользователя</h2>
+    <div class="card shadow p-4">
+        <form asp-action="CreateUsers" asp-controller="Admin" method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="UserSurname" class="form-label">Фамилия</label>
+                    <input asp-for="UserSurname" class="form-control" />
+                    <span asp-validation-for="UserSurname" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="UserName" class="form-label">Имя</label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="UserMiddlename" class="form-label">Отчество</label>
+                    <input asp-for="UserMiddlename" class="form-control" />
+                    <span asp-validation-for="UserMiddlename" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Email" class="form-label">Почта</label>
+                    <input asp-for="Email" class="form-control" type="email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Phone" class="form-label">Телефон</label>
+                    <input asp-for="Phone" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Logins" class="form-label">Логин</label>
+                    <input asp-for="Logins" class="form-control" />
+                    <span asp-validation-for="Logins" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Passwords" class="form-label">Пароль</label>
+                    <input asp-for="Passwords" class="form-control" type="password" />
+                    <span asp-validation-for="Passwords" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="RoleId" class="form-label">Роль</label>
+                    <select asp-for="RoleId" class="form-control">
+                        <option value="1">Администратор</option>
+                        <option value="2">Клиент</option>
+                    </select>
+                    <span asp-validation-for="RoleId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+                <a asp-action="Users" asp-controller="Admin" class="btn btn-secondary">Назад</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

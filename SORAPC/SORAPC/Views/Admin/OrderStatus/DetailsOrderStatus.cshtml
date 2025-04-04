@@ -1,0 +1,36 @@
+﻿@model SORAPC_API.Models.OrderStatus
+@{
+    ViewData["Title"] = "Детали статуса заказа";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">Детали статуса заказа</h2>
+    <div class="card shadow p-4">
+        <dl class="row">
+            <dt class="col-sm-3">ID</dt>
+            <dd class="col-sm-9">@Model.IdOrderStatus</dd>
+            <dt class="col-sm-3">Название</dt>
+            <dd class="col-sm-9">
+                @{
+                    string statusName = Model.IdOrderStatus == 1 ? "В обработке" :
+                    Model.IdOrderStatus == 2 ? "Подтверждён" :
+                    Model.IdOrderStatus == 3 ? "Доставляется" :
+                    Model.IdOrderStatus == 4 ? "Доставлен" :
+                    Model.IdOrderStatus == 5 ? "Отменён" :
+                    Model.Title ?? "Неизвестный статус";
+                    <span class="badge @(Model.IdOrderStatus == 1 ? "bg-warning" :
+                                         Model.IdOrderStatus == 2 ? "bg-primary" :
+                                         Model.IdOrderStatus == 3 ? "bg-info" :
+                                         Model.IdOrderStatus == 4 ? "bg-success" :
+                                         Model.IdOrderStatus == 5 ? "bg-danger" : "bg-secondary")">
+                        @statusName
+                    </span>
+                }
+            </dd>
+        </dl>
+        <div class="text-center mt-4">
+            <a asp-action="EditOrderStatus" asp-route-id="@Model.IdOrderStatus" class="btn btn-primary">Изменить</a>
+            <a asp-action="OrderStatus" class="btn btn-secondary">Назад</a>
+        </div>
+    </div>
+</div>

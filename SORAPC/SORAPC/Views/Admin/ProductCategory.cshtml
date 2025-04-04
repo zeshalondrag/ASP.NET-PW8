@@ -1,0 +1,69 @@
+﻿@model IEnumerable<SORAPC_API.Models.ProductCategory>
+@{
+    ViewBag.Title = "Список категорий продуктов";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">Список категорий продуктов</h2>
+    <div class="mb-3">
+        <a asp-action="Admin" asp-controller="Admin" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left me-2"></i> Назад к панели
+        </a>
+    </div>
+    <div class="mb-3">
+        <a asp-action="CreateProductCategory" asp-controller="Admin" class="btn btn-success">
+            <i class="fas fa-plus"></i> Добавить категорию
+        </a>
+    </div>
+    <div class="card shadow">
+        <div class="card-body">
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Название категории</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.IdProductCategory</td>
+                            <td>
+                                @{
+                                    string categoryName = item.IdProductCategory == 1 ? "Материнская плата" :
+                                    item.IdProductCategory == 2 ? "Видеокарта" :
+                                    item.IdProductCategory == 3 ? "Процессор" :
+                                    item.IdProductCategory == 4 ? "Система охлаждения" :
+                                    item.IdProductCategory == 5 ? "Оперативная память" :
+                                    item.IdProductCategory == 6 ? "Блок питания" :
+                                    item.IdProductCategory == 7 ? "Жесткий диск/SSD" :
+                                    item.IdProductCategory == 8 ? "Корпус" :
+                                    item.IdProductCategory == 9 ? "Периферия" :
+                                    item.Title ?? "Неизвестная категория";
+                                    <span class="badge bg-info">@categoryName</span>
+                                }
+                            </td>
+                            <td>
+                                <a asp-action="EditProductCategory" asp-route-id="@item.IdProductCategory" class="btn btn-sm btn-warning">
+                                    <i class="fas fa-edit"></i> Изменить
+                                </a>
+                                <a asp-action="DetailsProductCategory" asp-route-id="@item.IdProductCategory" class="btn btn-sm btn-info">
+                                    <i class="fas fa-info-circle"></i> Детали
+                                </a>
+                                <a asp-action="DeleteProductCategory" asp-route-id="@item.IdProductCategory" class="btn btn-sm btn-danger">
+                                    <i class="fas fa-trash"></i> Удалить
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+}

@@ -1,0 +1,27 @@
+﻿@model SORAPC_API.Models.ProductStatus
+@{
+    ViewData["Title"] = "Детали статуса продукта";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Детали статуса продукта</h2>
+    <div class="card shadow p-4">
+        <dl class="row">
+            <dt class="col-sm-3">ID</dt>
+            <dd class="col-sm-9">@Model.IdProductStatus</dd>
+            <dt class="col-sm-3">Название</dt>
+            <dd class="col-sm-9">
+                @{
+                    string statusName = Model.IdProductStatus == 1 ? "В наличии" :
+                    Model.IdProductStatus == 2 ? "Нет в наличии" :
+                    Model.Title ?? "Неизвестный статус";
+                    <span class="badge @(Model.IdProductStatus == 1 ? "bg-success" : "bg-danger")">@statusName</span>
+                }
+            </dd>
+        </dl>
+        <div class="text-center mt-4">
+            <a asp-action="EditProductStatus" asp-route-id="@Model.IdProductStatus" class="btn btn-primary">Изменить</a>
+            <a asp-action="ProductStatus" class="btn btn-secondary">Назад</a>
+        </div>
+    </div>
+</div>

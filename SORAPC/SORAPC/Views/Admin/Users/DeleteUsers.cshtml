@@ -1,0 +1,43 @@
+﻿@model SORAPC_API.Models.User
+@{
+    ViewData["Title"] = "Удалить пользователя";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">Удалить пользователя</h2>
+    <div class="card shadow p-4">
+        <h3 class="text-danger text-center">Вы уверены, что хотите удалить этого пользователя?</h3>
+        <dl class="row">
+            <dt class="col-sm-3">ID</dt>
+            <dd class="col-sm-9">@Model.IdUsers</dd>
+            <dt class="col-sm-3">Фамилия</dt>
+            <dd class="col-sm-9">@Model.UserSurname</dd>
+            <dt class="col-sm-3">Имя</dt>
+            <dd class="col-sm-9">@Model.UserName</dd>
+            <dt class="col-sm-3">Отчество</dt>
+            <dd class="col-sm-9">@Model.UserMiddlename</dd>
+            <dt class="col-sm-3">Почта</dt>
+            <dd class="col-sm-9">@Model.Email</dd>
+            <dt class="col-sm-3">Телефон</dt>
+            <dd class="col-sm-9">@Model.Phone</dd>
+            <dt class="col-sm-3">Логин</dt>
+            <dd class="col-sm-9">@Model.Logins</dd>
+            <dt class="col-sm-3">Роль</dt>
+            <dd class="col-sm-9">
+                @{
+                    string roleName = Model.RoleId == 1 ? "Администратор" :
+                    Model.RoleId == 2 ? "Клиент" :
+                    "Неизвестная роль";
+                    <span class="badge @(Model.RoleId == 1 ? "bg-primary" : "bg-secondary")">@roleName</span>
+                }
+            </dd>
+        </dl>
+        <form asp-action="DeleteUsers" asp-controller="Admin" method="post">
+            <input type="hidden" asp-for="IdUsers" />
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-danger">Удалить</button>
+                <a asp-action="Users" class="btn btn-secondary">Назад</a>
+            </div>
+        </form>
+    </div>
+</div>

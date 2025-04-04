@@ -1,0 +1,89 @@
+﻿@model SORAPC_API.Models.Product
+
+<div class="reviews-section">
+    <h2 class="fw-bold mb-4">Все отзывы (@Model.Reviews.Count())</h2>
+    @if (Model.Reviews.Any())
+    {
+        foreach (var review in Model.Reviews)
+        {
+            <div class="card shadow-sm border-0 rounded-4 p-4 mb-3 review-card">
+                <!-- Заголовок отзыва -->
+                <div class="review-header d-flex justify-content-between align-items-center mb-3">
+                    <div class="review-user d-flex align-items-center gap-2">
+                        <i class="fas fa-user-circle text-muted"></i>
+                        <span class="fw-semibold">@review.Users.Logins</span>
+                    </div>
+                    <div class="review-date text-muted">
+                        <span>@review.CreatedAt?.ToString("dd.MM.yyyy")</span>
+                    </div>
+                </div>
+
+                <!-- Рейтинг -->
+                <div class="review-rating mb-3">
+                    @for (int i = 0; i < review.Rating; i++)
+                    {
+                        <i class="fas fa-star text-warning"></i>
+                    }
+                    @for (int i = review.Rating; i < 5; i++)
+                    {
+                        <i class="far fa-star text-muted"></i>
+                    }
+                </div>
+
+                <!-- Текст отзыва -->
+                <div class="review-text">
+                    <p class="review-title fw-semibold text-dark mb-1">Достоинства:</p>
+                    <p class="text-muted mb-3">@review.Pros</p>
+
+                    <p class="review-title fw-semibold text-dark mb-1">Недостатки:</p>
+                    <p class="text-muted mb-3">@review.Cons</p>
+
+                    <p class="review-title fw-semibold text-dark mb-1">Комментарий:</p>
+                    <p class="text-muted">@review.Comment</p>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p class="text-muted">Пока нет отзывов. Будьте первым!</p>
+    }
+</div>
+
+<style>
+    .review-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+        }
+
+    .review-header {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .review-user {
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    .review-date {
+        font-size: 0.9rem;
+    }
+
+    .review-rating {
+        font-size: 1rem;
+    }
+
+    .review-title {
+        font-size: 1rem;
+    }
+
+    .review-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+</style>

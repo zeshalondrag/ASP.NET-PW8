@@ -1,0 +1,75 @@
+﻿@model IEnumerable<SORAPC_API.Models.User>
+@{
+    ViewBag.Title = "Список пользователей";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">Список пользователей</h2>
+    <div class="mb-3">
+        <a asp-action="Admin" asp-controller="Admin" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left me-2"></i> Назад к панели
+        </a>
+    </div>
+    <div class="mb-3">
+        <a asp-action="CreateUsers" asp-controller="Admin" class="btn btn-success">
+            <i class="fas fa-plus"></i> Добавить пользователя
+        </a>
+    </div>
+    <div class="card shadow">
+        <div class="card-body">
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Фамилия</th>
+                        <th>Имя</th>
+                        <th>Отчество</th>
+                        <th>Почта</th>
+                        <th>Телефон</th>
+                        <th>Логин</th>
+                        <th>Роль</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.IdUsers</td>
+                            <td>@item.UserSurname</td>
+                            <td>@item.UserName</td>
+                            <td>@item.UserMiddlename</td>
+                            <td>@item.Email</td>
+                            <td>@item.Phone</td>
+                            <td>@item.Logins</td>
+                            <td>
+                                @{
+                                    string roleName = item.RoleId == 1 ? "Администратор" :
+                                    item.RoleId == 2 ? "Клиент" :
+                                    "Неизвестная роль";
+                                    <span class="badge @(item.RoleId == 1 ? "bg-primary" : "bg-secondary")">@roleName</span>
+                                }
+                            </td>
+                            <td>
+                                <a asp-action="EditUsers" asp-route-id="@item.IdUsers" class="btn btn-sm btn-warning">
+                                    <i class="fas fa-edit"></i> Изменить
+                                </a>
+                                <a asp-action="DetailsUsers" asp-route-id="@item.IdUsers" class="btn btn-sm btn-info">
+                                    <i class="fas fa-info-circle"></i> Детали
+                                </a>
+                                <a asp-action="DeleteUsers" asp-route-id="@item.IdUsers" class="btn btn-sm btn-danger">
+                                    <i class="fas fa-trash"></i> Удалить
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Подключение Font Awesome для иконок -->
+@section Scripts {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+}

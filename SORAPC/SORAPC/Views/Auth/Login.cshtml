@@ -1,0 +1,100 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "Авторизация";
+}
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg border-0 rounded-4 p-4 auth-card" style="max-width: 400px; width: 100%;">
+        <!-- Заголовок -->
+        <div class="card-header bg-transparent text-center border-0">
+            <h2 class="fw-bold text-primary mb-0">
+                <i class="fas fa-sign-in-alt me-2"></i> Авторизация
+            </h2>
+        </div>
+
+        <!-- Тело формы -->
+        <div class="card-body">
+            <form method="post" asp-controller="Auth" asp-action="Login">
+                <!-- Поле логина -->
+                <div class="mb-3">
+                    <label for="login" class="form-label fw-semibold text-muted">
+                        <i class="fas fa-user me-2"></i> Логин
+                    </label>
+                    <input name="Login" type="text" required class="form-control rounded-pill" id="login" placeholder="Введите логин">
+                </div>
+
+                <!-- Поле пароля -->
+                <div class="mb-4">
+                    <label for="passwords" class="form-label fw-semibold text-muted">
+                        <i class="fas fa-lock me-2"></i> Пароль
+                    </label>
+                    <div class="input-group">
+                        <input name="Password" type="password" required class="form-control rounded-pill" id="passwords" placeholder="Введите пароль">
+                        <button type="button" class="btn btn-outline-secondary rounded-pill" onclick="togglePassword()">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Кнопка -->
+                <button type="submit" class="btn btn-primary btn-block rounded-pill fw-semibold">
+                    <i class="fas fa-arrow-right me-2"></i> Войти
+                </button>
+
+                <!-- Сообщение об ошибке -->
+                @if (ViewBag.ErrorMessage != null)
+                {
+                    <div class="alert alert-danger mt-3 rounded-3" role="alert">
+                        @ViewBag.ErrorMessage
+                    </div>
+                }
+            </form>
+
+            <!-- Ссылка на регистрацию -->
+            <div class="text-center mt-3">
+                <a asp-controller="Auth" asp-action="Register" class="text-primary text-decoration-none fw-semibold">
+                    Нет аккаунта? Зарегистрируйтесь!
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .auth-card {
+        background: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .auth-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+        }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    .form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    .min-vh-100 {
+        min-height: 100vh;
+    }
+</style>
+
+<script>
+    function togglePassword() {
+        const passwordField = document.getElementById("passwords");
+        const type = passwordField.type === "password" ? "text" : "password";
+        passwordField.type = type;
+    }
+</script>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SORAPC", "SORAPC\SORAPC.csproj", "{C37F534B-E704-47BB-B375-8ACE7F2D2A5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C37F534B-E704-47BB-B375-8ACE7F2D2A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37F534B-E704-47BB-B375-8ACE7F2D2A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37F534B-E704-47BB-B375-8ACE7F2D2A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37F534B-E704-47BB-B375-8ACE7F2D2A5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {320BA528-7F08-495A-A518-5E35A30B9A01}
+	EndGlobalSection
+EndGlobal

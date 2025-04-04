@@ -1,0 +1,74 @@
+﻿@model SORAPC_API.Models.Product
+@{
+    ViewData["Title"] = "Добавить продукт";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">Добавить продукт</h2>
+    <div class="card shadow p-4">
+        <form asp-action="CreateProducts" asp-controller="Admin" method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Names" class="form-label">Название</label>
+                    <input asp-for="Names" class="form-control" />
+                    <span asp-validation-for="Names" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Price" class="form-label">Цена</label>
+                    <input asp-for="Price" class="form-control" type="number" step="0.01" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Descriptions" class="form-label">Описание</label>
+                <textarea asp-for="Descriptions" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Descriptions" class="text-danger"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Quantity" class="form-label">Количество</label>
+                    <input asp-for="Quantity" class="form-control" type="number" />
+                    <span asp-validation-for="Quantity" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="ProductStatusId" class="form-label">Статус</label>
+                    <select asp-for="ProductStatusId" class="form-control">
+                        <option value="1">В наличии</option>
+                        <option value="2">Нет в наличии</option>
+                    </select>
+                    <span asp-validation-for="ProductStatusId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ProductCategoryId" class="form-label">Категория</label>
+                <select asp-for="ProductCategoryId" class="form-control">
+                    <option value="1">Материнская плата</option>
+                    <option value="2">Видеокарта</option>
+                    <option value="3">Процессор</option>
+                    <option value="4">Система охлаждения</option>
+                    <option value="5">Оперативная память</option>
+                    <option value="6">Блок питания</option>
+                    <option value="7">Жесткий диск/SSD</option>
+                    <option value="8">Корпус</option>
+                    <option value="9">Периферия</option>
+                </select>
+                <span asp-validation-for="ProductCategoryId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Img" class="form-label">URL изображения</label>
+                <input asp-for="Img" class="form-control" />
+                <span asp-validation-for="Img" class="text-danger"></span>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+                <a asp-action="Products" asp-controller="Admin" class="btn btn-secondary">Назад</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

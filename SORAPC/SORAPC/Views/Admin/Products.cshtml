@@ -1,0 +1,84 @@
+﻿@model IEnumerable<SORAPC_API.Models.Product>
+@{
+    ViewBag.Title = "Список продуктов";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">Список продуктов</h2>
+    <div class="mb-3">
+        <a asp-action="Admin" asp-controller="Admin" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left me-2"></i> Назад к панели
+        </a>
+    </div>
+    <div class="mb-3">
+        <a asp-action="CreateProducts" asp-controller="Admin" class="btn btn-success">
+            <i class="fas fa-plus"></i> Добавить продукт
+        </a>
+    </div>
+    <div class="card shadow">
+        <div class="card-body">
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Название</th>
+                        <th>Цена</th>
+                        <th>Количество</th>
+                        <th>Статус</th>
+                        <th>Категория</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.IdProduct</td>
+                            <td>@item.Names</td>
+                            <td>@item.Price</td>
+                            <td>@item.Quantity</td>
+                            <td>
+                                @{
+                                    string status = item.ProductStatusId == 1 ? "В наличии" :
+                                    item.ProductStatusId == 2 ? "Нет в наличии" :
+                                    "Неизвестно";
+                                    <span class="badge @(item.ProductStatusId == 1 ? "bg-success" : "bg-danger")">@status</span>
+                                }
+                            </td>
+                            <td>
+                                @{
+                                    string category = item.ProductCategoryId == 1 ? "Материнская плата" :
+                                    item.ProductCategoryId == 2 ? "Видеокарта" :
+                                    item.ProductCategoryId == 3 ? "Процессор" :
+                                    item.ProductCategoryId == 4 ? "Система охлаждения" :
+                                    item.ProductCategoryId == 5 ? "Оперативная память" :
+                                    item.ProductCategoryId == 6 ? "Блок питания" :
+                                    item.ProductCategoryId == 7 ? "Жесткий диск/SSD" :
+                                    item.ProductCategoryId == 8 ? "Корпус" :
+                                    item.ProductCategoryId == 9 ? "Периферия" :
+                                    "Неизвестно";
+                                    @category
+                                }
+                            </td>
+                            <td>
+                                <a asp-action="EditProducts" asp-route-id="@item.IdProduct" class="btn btn-sm btn-warning">
+                                    <i class="fas fa-edit"></i> Изменить
+                                </a>
+                                <a asp-action="DetailsProducts" asp-route-id="@item.IdProduct" class="btn btn-sm btn-info">
+                                    <i class="fas fa-info-circle"></i> Детали
+                                </a>
+                                <a asp-action="DeleteProducts" asp-route-id="@item.IdProduct" class="btn btn-sm btn-danger">
+                                    <i class="fas fa-trash"></i> Удалить
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+}

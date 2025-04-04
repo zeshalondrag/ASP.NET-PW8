@@ -1,0 +1,89 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "Панель администратора";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-5 fw-bold text-uppercase" style="color: #343a40;">Панель администратора</h2>
+    <div class="row g-4 justify-content-center">
+        <!-- Статус заказа -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm h-100 border-0 hover-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-clipboard-check fa-2x mb-3 text-primary"></i>
+                    <h5 class="card-title fw-semibold">Статус заказа</h5>
+                    <a asp-action="OrderStatus" asp-controller="Admin" class="btn btn-primary btn-sm mt-2">Перейти</a>
+                </div>
+            </div>
+        </div>
+        <!-- Категория продукта -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm h-100 border-0 hover-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-th-large fa-2x mb-3 text-primary"></i>
+                    <h5 class="card-title fw-semibold">Категория продукта</h5>
+                    <a asp-action="ProductCategory" asp-controller="Admin" class="btn btn-primary btn-sm mt-2">Перейти</a>
+                </div>
+            </div>
+        </div>
+        <!-- Продукты -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm h-100 border-0 hover-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-box-open fa-2x mb-3 text-primary"></i>
+                    <h5 class="card-title fw-semibold">Продукты</h5>
+                    <a asp-action="Products" asp-controller="Admin" class="btn btn-primary btn-sm mt-2">Перейти</a>
+                </div>
+            </div>
+        </div>
+        <!-- Статус продукта -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm h-100 border-0 hover-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-tasks fa-2x mb-3 text-primary"></i>
+                    <h5 class="card-title fw-semibold">Статус продукта</h5>
+                    <a asp-action="ProductStatus" asp-controller="Admin" class="btn btn-primary btn-sm mt-2">Перейти</a>
+                </div>
+            </div>
+        </div>
+        <!-- Роли -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm h-100 border-0 hover-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-user-shield fa-2x mb-3 text-primary"></i>
+                    <h5 class="card-title fw-semibold">Роли</h5>
+                    <a asp-action="Roles" asp-controller="Admin" class="btn btn-primary btn-sm mt-2">Перейти</a>
+                </div>
+            </div>
+        </div>
+        <!-- Пользователи -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card shadow-sm h-100 border-0 hover-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-users fa-2x mb-3 text-primary"></i>
+                    <h5 class="card-title fw-semibold">Пользователи</h5>
+                    <a asp-action="Users" asp-controller="Admin" class="btn btn-primary btn-sm mt-2">Перейти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .hover-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+    }
+    .card-title {
+        color: #343a40;
+    }
+    .btn-primary {
+        transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+</style>

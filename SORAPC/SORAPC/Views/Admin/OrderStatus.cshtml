@@ -1,0 +1,71 @@
+﻿@model IEnumerable<SORAPC_API.Models.OrderStatus>
+@{
+    ViewBag.Title = "Список статусов заказов";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">Список статусов заказов</h2>
+    <div class="mb-3">
+        <a asp-action="Admin" asp-controller="Admin" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left me-2"></i> Назад к панели
+        </a>
+    </div>
+    <div class="mb-3">
+        <a asp-action="CreateOrderStatus" asp-controller="Admin" class="btn btn-success">
+            <i class="fas fa-plus"></i> Добавить статус
+        </a>
+    </div>
+    <div class="card shadow">
+        <div class="card-body">
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Название статуса</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.IdOrderStatus</td>
+                            <td>
+                                @{
+                                    string statusName = item.IdOrderStatus == 1 ? "В обработке" :
+                                    item.IdOrderStatus == 2 ? "Подтверждён" :
+                                    item.IdOrderStatus == 3 ? "Доставляется" :
+                                    item.IdOrderStatus == 4 ? "Доставлен" :
+                                    item.IdOrderStatus == 5 ? "Отменён" :
+                                    item.Title ?? "Неизвестный статус";
+                                    <span class="badge @(item.IdOrderStatus == 1 ? "bg-warning" :
+                                                         item.IdOrderStatus == 2 ? "bg-primary" :
+                                                         item.IdOrderStatus == 3 ? "bg-info" :
+                                                         item.IdOrderStatus == 4 ? "bg-success" :
+                                                         item.IdOrderStatus == 5 ? "bg-danger" : "bg-secondary")">
+                                        @statusName
+                                    </span>
+                                }
+                            </td>
+                            <td>
+                                <a asp-action="EditOrderStatus" asp-route-id="@item.IdOrderStatus" class="btn btn-sm btn-warning">
+                                    <i class="fas fa-edit"></i> Изменить
+                                </a>
+                                <a asp-action="DetailsOrderStatus" asp-route-id="@item.IdOrderStatus" class="btn btn-sm btn-info">
+                                    <i class="fas fa-info-circle"></i> Детали
+                                </a>
+                                <a asp-action="DeleteOrderStatus" asp-route-id="@item.IdOrderStatus" class="btn btn-sm btn-danger">
+                                    <i class="fas fa-trash"></i> Удалить
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+}

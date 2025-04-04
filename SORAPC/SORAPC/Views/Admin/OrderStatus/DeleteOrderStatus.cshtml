@@ -1,0 +1,40 @@
+﻿@model SORAPC_API.Models.OrderStatus
+@{
+    ViewData["Title"] = "Удалить статус заказа";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4">Удалить статус заказа</h2>
+    <div class="card shadow p-4">
+        <h3 class="text-danger text-center">Вы уверены, что хотите удалить этот статус?</h3>
+        <dl class="row">
+            <dt class="col-sm-3">ID</dt>
+            <dd class="col-sm-9">@Model.IdOrderStatus</dd>
+            <dt class="col-sm-3">Название</dt>
+            <dd class="col-sm-9">
+                @{
+                    string statusName = Model.IdOrderStatus == 1 ? "В обработке" :
+                    Model.IdOrderStatus == 2 ? "Подтверждён" :
+                    Model.IdOrderStatus == 3 ? "Доставляется" :
+                    Model.IdOrderStatus == 4 ? "Доставлен" :
+                    Model.IdOrderStatus == 5 ? "Отменён" :
+                    Model.Title ?? "Неизвестный статус";
+                    <span class="badge @(Model.IdOrderStatus == 1 ? "bg-warning" :
+                                         Model.IdOrderStatus == 2 ? "bg-primary" :
+                                         Model.IdOrderStatus == 3 ? "bg-info" :
+                                         Model.IdOrderStatus == 4 ? "bg-success" :
+                                         Model.IdOrderStatus == 5 ? "bg-danger" : "bg-secondary")">
+                        @statusName
+                    </span>
+                }
+            </dd>
+        </dl>
+        <form asp-action="DeleteOrderStatus" asp-controller="Admin" method="post">
+            <input type="hidden" asp-for="IdOrderStatus" />
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-danger">Удалить</button>
+                <a asp-action="OrderStatus" asp-controller="Admin" class="btn btn-secondary">Назад</a>
+            </div>
+        </form>
+    </div>
+</div>

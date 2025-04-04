@@ -1,0 +1,28 @@
+﻿@model SORAPC_API.Models.ProductStatus
+@{
+    ViewData["Title"] = "Изменить статус продукта";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Изменить статус продукта</h2>
+    <div class="card shadow p-4">
+        <form asp-action="EditProductStatus" asp-controller="Admin" method="post">
+            <input type="hidden" asp-for="IdProductStatus" />
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label">Название статуса</label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+                <a asp-action="ProductStatus" asp-controller="Admin" class="btn btn-secondary">Назад</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

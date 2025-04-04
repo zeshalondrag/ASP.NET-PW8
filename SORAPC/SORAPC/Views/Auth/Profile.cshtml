@@ -1,0 +1,127 @@
+﻿@model SORAPC_API.Models.User
+@{
+    ViewData["Title"] = "Профиль";
+}
+
+<div class="container mt-5 pt-5">
+    <h2 class="text-center mb-4 fw-bold text-uppercase" style="color: #343a40;">Профиль пользователя</h2>
+    <div class="card shadow-lg border-0 p-4 mx-auto" style="max-width: 600px;">
+        <div class="card-body">
+            <!-- Аватар -->
+            <div class="text-center mb-4">
+                <div class="avatar-circle mx-auto" style="background-color: @(Model.RoleId == 1 ? "#007bff" : "#6c757d");">
+                    <span class="avatar-initials">@(Model.UserName?[0].ToString().ToUpper() ?? "U")</span>
+                </div>
+                <h5 class="mt-2 fw-semibold">@Model.UserName @Model.UserSurname</h5>
+            </div>
+
+            <!-- Информация -->
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="fw-semibold text-muted"><i class="fas fa-user-shield me-2"></i>Роль:</label>
+                    <p>
+                        @{
+                            string roleName = Model.RoleId == 1 ? "Администратор" :
+                            Model.RoleId == 2 ? "Клиент" :
+                            "Неизвестная роль";
+                            <span class="badge @(Model.RoleId == 1 ? "bg-primary" : "bg-secondary")">@roleName</span>
+                        }
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <label class="fw-semibold text-muted"><i class="fas fa-user me-2"></i>Фамилия:</label>
+                    <p>@Model.UserSurname</p>
+                </div>
+                <div class="col-md-6">
+                    <label class="fw-semibold text-muted"><i class="fas fa-user me-2"></i>Имя:</label>
+                    <p>@Model.UserName</p>
+                </div>
+                <div class="col-md-6">
+                    <label class="fw-semibold text-muted"><i class="fas fa-user me-2"></i>Отчество:</label>
+                    <p>@Model.UserMiddlename</p>
+                </div>
+                <div class="col-md-6">
+                    <label class="fw-semibold text-muted"><i class="fas fa-envelope me-2"></i>Email:</label>
+                    <p>@Model.Email</p>
+                </div>
+                <div class="col-md-6">
+                    <label class="fw-semibold text-muted"><i class="fas fa-phone me-2"></i>Телефон:</label>
+                    <p>@Model.Phone</p>
+                </div>
+                <div class="col-md-6">
+                    <label class="fw-semibold text-muted"><i class="fas fa-user-tag me-2"></i>Логин:</label>
+                    <p>@Model.Logins</p>
+                </div>
+                <div class="col-md-6">
+                    <label class="fw-semibold text-muted"><i class="fas fa-lock me-2"></i>Пароль:</label>
+                    <div class="input-group">
+                        <input type="password" id="password" class="form-control" value="@Model.Passwords" readonly>
+                        <button class="btn btn-outline-secondary" type="button" onclick="togglePassword()">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Кнопки -->
+            <div class="text-center mt-4">
+                @if (Model.RoleId == 1)
+                {
+                    <a asp-controller="Admin" asp-action="Admin" class="btn btn-primary me-2">
+                        <i class="fas fa-tachometer-alt me-2"></i>Панель администратора
+                    </a>
+                }
+                <a href="/Auth/Logout" class="btn btn-danger">
+                    <i class="fas fa-sign-out-alt me-2"></i>Выйти
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .avatar-circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .avatar-initials {
+        text-transform: uppercase;
+    }
+
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+        }
+
+    .btn {
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    .btn-danger:hover {
+        background-color: #c82333;
+    }
+</style>
+
+<script>
+    function togglePassword() {
+        const passwordField = document.getElementById("password");
+        const type = passwordField.type === "password" ? "text" : "password";
+        passwordField.type = type;
+    }
+</script>

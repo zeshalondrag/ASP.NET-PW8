@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "j0lTbjUjNG8C8VFSSnEadagNRd/VUEDq6cMhRoPSewk=",
+  "Source": "SORAPC-API",
+  "BasePath": "_content/SORAPC-API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
